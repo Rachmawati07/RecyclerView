@@ -1,0 +1,43 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Ini adalah bagian untuk menampilkan kata-kata agar bisa digulir
+        - Tinggi layoutnya ialah 449dp dengan lebar 409dp
+        - Untuk menyecrooll layar secara vertikal
+     -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="409dp"
+        android:layout_height="449dp"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageKata"
+        app:layout_constraintVertical_bias="0.978" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+      - Mempunyai id berupa imageKata
+      - Gambar yang ditampilkan berupa gambar untuk motivasi
+      - Gambar berasal dari drawble
+      - Tinggi gambar ialah 160dp dengan lebar 305dp
+      - Menggunakan contentDescription yang dikelompokkan pada string
+   -->
+    <ImageView
+        android:id="@+id/imageKata"
+        android:layout_width="305dp"
+        android:layout_height="160dp"
+        android:contentDescription="@string/imageKata"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        app:srcCompat="@drawable/kata" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

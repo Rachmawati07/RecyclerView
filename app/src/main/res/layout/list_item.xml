@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Bagian ini digunakan untuk membuat tata letak untuk item
+     - Mempunyai warna background untuk item berupa biru muda dengan kode warna #92EAED
+     - Menggunakan font berupa sans-serif-medium
+     - Mempunyai ukuran teks sebesar 24sp dan dibold
+     - Mempunyai ukuran padding sebesar 8dp
+ -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:background="#92EAED"
+    android:fontFamily="sans-serif-medium"
+    android:padding="8dp"
+    android:textColor="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold" />
