@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.rachma.affirmations.adapter.ItemAdapter
 import com.rachma.affirmations.data.Datasource
 
-// TODO 6 : Merupakan proses untuk menampilkan data ke recyclerview
+// TODO 6 : Merupakan proses untuk menampilkan data ke RecyclerView
 // Untuk mendeklarasikan class yang bernama MainActivity
 class MainActivity : AppCompatActivity() {
 
